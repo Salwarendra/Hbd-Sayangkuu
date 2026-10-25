@@ -139,6 +139,63 @@
       text-shadow:0 2px 15px rgba(96,45,77,0.14);
     }
 
+    .photo-layout{
+      margin: 12px auto 18px;
+      width: min(100%, 430px);
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 12px;
+      align-items:stretch;
+    }
+
+    .photo-block {
+      position:relative;
+      overflow:hidden;
+      border-radius: 22px;
+      border: 2px solid rgba(255,255,255,0.52);
+      box-shadow: 0 18px 30px rgba(120,48,82,0.16);
+      background:#fce8f2;
+      min-height: 180px;
+    }
+
+    .photo-block img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      transition: transform .35s ease;
+    }
+
+    .photo-block:hover img {
+      transform: scale(1.04);
+    }
+
+    .photo-stack{
+      display:grid;
+      grid-template-rows: 1fr 1fr;
+      gap:12px;
+    }
+
+    .photo-block.small {
+      min-height: 84px;
+      border-radius: 18px;
+    }
+
+    .photo-badge {
+      position:absolute;
+      left:12px;
+      bottom:12px;
+      background: rgba(255,255,255,0.28);
+      backdrop-filter: blur(8px);
+      border:1px solid rgba(255,255,255,0.42);
+      color:#fff;
+      font:700 11px/1 Arial, sans-serif;
+      letter-spacing:0.9px;
+      padding:7px 10px;
+      border-radius:999px;
+      text-transform:uppercase;
+    }
+
     .letter{
       margin-top:18px;
       padding:22px 18px 18px;
@@ -295,6 +352,12 @@
     }
 
     @media (max-width: 480px){
+      .photo-layout{
+        grid-template-columns: 1fr;
+      }
+      .photo-block {
+        min-height: 180px;
+      }
       .music-embed{
         width:90px;
         height:58px;
@@ -333,14 +396,30 @@
           Hari ini dunia punya alasan ekstra untuk tersenyum — karena seseorang seistimewa kamu lahir ke dunia dan membawa banyak kehangatan ke hidupku.
         </p>
 
+        <div class="photo-layout" aria-label="Kolase foto bersama">
+          <div class="photo-block">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Foto bersama" />
+            <span class="photo-badge">Us</span>
+          </div>
+
+          <div class="photo-stack">
+            <div class="photo-block small">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" alt="Foto close-up" />
+            </div>
+            <div class="photo-block small">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80" alt="Foto kebahagiaan" />
+            </div>
+          </div>
+        </div>
+
         <div class="letter">
           <h2>Untuk Puja, cintaku 💕</h2>
           <p>Selamat ulang tahun, sayangku. ❤️</p>
           <p>Di hari yang istimewa ini, aku berdoa semoga langkahmu selalu dimudahkan, hatimu selalu tenang, dan semua harapan indah yang kamu pegang perlahan-lahan menjadi nyata.</p>
-          <p>Terima kasih sudah hadir dalam hidupku dan membuat banyak hal sederhana terasa lebih berarti. Kamu adalah salah satu alasan aku belajar lebih sabar, lebih ikhlas, dan lebih bersyukur atas segala hal yang terjadi.</p>
-          <p>Semoga di usia yang baru ini, kamu selalu diberi kesehatan, kebahagiaan, rezeki yang berkah, dan banyak alasan untuk terus tersenyum. Kalau suatu hari dunia terasa berat, semoga kamu ingat bahwa kamu tidak pernah sendirian, dan ada seseorang yang ingin selalu ada untukmu.</p>
+          <p>Terima kasih sudah hadir dalam hidupku dan membuat banyak hal sederhana terasa lebih berarti. Kamu adalah salah satu alasan aku belajar lebih sabar, lebih ikhlas, dan lebih bersyukur atas semua hal yang Tuhan beri.</p>
+          <p>Semoga di usia yang baru ini, kamu selalu diberi kesehatan, kebahagiaan, rezeki yang berkah, dan banyak alasan untuk terus tersenyum. Kalau suatu hari dunia terasa berat, semoga kamu ingat bahwa ada seseorang yang selalu mendoakanmu dengan tulus.</p>
           <p>Aku mungkin belum bisa memberi semua yang kamu inginkan, tapi aku ingin terus belajar menjadi sosok yang bisa menemanimu, mendukungmu, dan menyayangimu dengan tulus.</p>
-          <p>Selamat bertambah usia, Puja Suci Rahmadani. Semoga hari ini adalah awal dari banyak momen indah yang menunggumu, dan semoga aku masih diberi kesempatan untuk terus merayakan banyak ulang tahunmu berikutnya, bersamamu. 🌹</p>
+          <p>Selamat bertambah usia, Puja Suci Rahmadani. Semoga hari ini adalah awal dari banyak momen indah yang menunggumu, dan semoga aku masih diberi kesempatan untuk terus merayakan banyak ulang tahun bersamamu di masa depan.</p>
           <p class="signature">With all my love,<br>orang yang sangat menyayangimu ❤️</p>
         </div>
 
