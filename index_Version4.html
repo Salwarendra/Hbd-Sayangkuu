@@ -6,370 +6,414 @@
   <meta name="theme-color" content="#ff7eb3" />
   <title>Happy Birthday, Puja Suci Rahmadani 💗</title>
   <style>
-    :root{
-      --pink-1:#ffdfe9;
-      --pink-2:#ff9fc1;
-      --pink-3:#ff6ea8;
-      --purple-1:#d8b4fe;
-      --purple-2:#8f6bd8;
-      --rose:#b94271;
-      --white:#fffafc;
-      --glass: rgba(255,255,255,0.16);
-      --text-soft:#fff3f9;
-      --text-dark:#7a365b;
+    :root {
+      --pink-1: #ffe7f1;
+      --pink-2: #ffb3d1;
+      --pink-3: #ff7eb3;
+      --pink-4: #ff4d9c;
+      --purple-1: #f3d0ff;
+      --purple-2: #cb9af6;
+      --purple-3: #8f6bd8;
+      --rose: #bf4271;
+      --text-soft: #fff1f8;
+      --text-dark: #6f2f4b;
+      --white: #fffafc;
+      --glass: rgba(255,255,255,0.14);
+      --gold: #ffdca9;
     }
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      min-height:100vh;
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
       font-family: Georgia, "Times New Roman", serif;
+      color: #fff;
       background:
-        radial-gradient(circle at top left, rgba(255,255,255,0.55), transparent 26%),
-        radial-gradient(circle at bottom right, rgba(255,255,255,0.18), transparent 22%),
-        linear-gradient(135deg, #ffe7f1 0%, #ffb3d1 18%, #e7a7d9 34%, #c69be8 61%, #8c75d7 100%);
-      color:#fff;
-      overflow-x:hidden;
-      position:relative;
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,0.7), transparent 18%),
+        radial-gradient(circle at 75% 25%, rgba(255,255,255,0.28), transparent 20%),
+        radial-gradient(circle at 40% 80%, rgba(255,255,255,0.25), transparent 24%),
+        linear-gradient(135deg, #ffeaf4 0%, #ffbfd8 16%, #eeabd7 32%, #d1a8f5 58%, #8f78d8 100%);
+      overflow-x: hidden;
+      position: relative;
     }
 
-    .glow{
-      position:fixed;
-      width:260px;
-      height:260px;
-      border-radius:50%;
+    .glow {
+      position: fixed;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
       background: rgba(255,255,255,0.22);
-      filter: blur(42px);
-      z-index:0;
-      pointer-events:none;
+      filter: blur(44px);
+      z-index: 0;
+      pointer-events: none;
       animation: drift 12s ease-in-out infinite alternate;
     }
-    .glow.one{top:8%; left:-50px}
-    .glow.two{right:-40px; bottom:8%; animation-delay:2s}
-    .glow.three{left:42%; top:42%; width:220px; height:220px; animation-delay:4s}
+    .glow.one { top: 4%; left: -30px; }
+    .glow.two { right: -40px; bottom: 8%; animation-delay: 2s; }
+    .glow.three { left: 42%; top: 38%; width: 220px; height: 220px; animation-delay: 4s; }
 
-    .wrap{
-      width:min(92%,540px);
-      margin:42px auto 38px;
-      position:relative;
-      z-index:1;
+    .wrap {
+      width: min(94%, 620px);
+      margin: 42px auto 38px;
+      position: relative;
+      z-index: 1;
     }
 
-    .card{
-      background: rgba(255,255,255,0.13);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border:1px solid rgba(255,255,255,0.38);
-      border-radius:32px;
-      box-shadow: 0 24px 60px rgba(123,55,104,0.18);
-      padding: clamp(24px, 5vw, 42px);
-      text-align:center;
-      position:relative;
-      overflow:hidden;
+    .card {
+      position: relative;
+      overflow: hidden;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 34px;
+      box-shadow: 0 26px 60px rgba(128,58,104,0.18);
+      padding: clamp(22px, 4vw, 38px);
+      text-align: center;
     }
 
-    .card::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background: linear-gradient(120deg, rgba(255,255,255,0.18), rgba(255,255,255,0.03), rgba(255,255,255,0.12));
-      pointer-events:none;
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(255,255,255,0.18), rgba(255,255,255,0.04), rgba(255,255,255,0.15));
+      pointer-events: none;
     }
 
-    .content{
-      position:relative;
-      z-index:1;
+    .content {
+      position: relative;
+      z-index: 1;
     }
 
-    .eyebrow{
-      font:700 11px/1.2 Arial, sans-serif;
-      letter-spacing:4px;
-      text-transform:uppercase;
-      opacity:0.95;
-      color:#fff9fd;
-      margin-bottom:10px;
+    .eyebrow {
+      font: 700 11px/1.2 Arial, sans-serif;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #fffafc;
+      opacity: 0.96;
+      margin-bottom: 8px;
     }
 
-    .sparkle{
-      display:inline-block;
+    .sparkle {
+      display: inline-block;
       animation: twinkle 1.8s ease-in-out infinite;
     }
 
-    h1{
-      margin:0;
-      font-size:clamp(2.2rem,7vw,4rem);
-      line-height:1.08;
-      letter-spacing:1px;
-      text-shadow:0 4px 20px rgba(138,50,103,0.38);
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 6.6vw, 4.5rem);
+      line-height: 1.08;
+      letter-spacing: 1px;
+      text-shadow: 0 6px 20px rgba(136,54,99,0.28);
     }
 
-    .name{
-      margin:16px 0 12px;
-      font-size:clamp(1.5rem,4vw,2.2rem);
-      font-weight:700;
-      color:#fffafc;
-      letter-spacing:0.5px;
+    .name {
+      margin: 12px 0 10px;
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #fffafc;
+      letter-spacing: 0.6px;
     }
 
-    .date-pill{
-      display:inline-block;
-      padding:8px 18px;
-      border-radius:999px;
+    .date-pill {
+      display: inline-block;
+      padding: 9px 20px;
+      border-radius: 999px;
       background: rgba(255,255,255,0.12);
-      border:1px solid rgba(255,255,255,0.45);
+      border: 1px solid rgba(255,255,255,0.5);
       font: 600 13px/1.2 Arial, sans-serif;
-      letter-spacing:0.4px;
-      color:#fffafc;
+      letter-spacing: 0.4px;
+      color: #fffafc;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
     }
 
-    .cake{
-      font-size:86px;
-      margin:18px 0 12px;
-      display:inline-block;
-      filter: drop-shadow(0 10px 22px rgba(141,49,95,0.25));
-      animation: bob 2.5s ease-in-out infinite;
+    .cake {
+      font-size: 92px;
+      margin: 18px 0 10px;
+      display: inline-block;
+      filter: drop-shadow(0 12px 22px rgba(140,51,101,0.22));
+      animation: bob 2.6s ease-in-out infinite;
     }
 
-    .intro{
-      max-width:390px;
-      margin:0 auto 20px;
+    .intro {
+      max-width: 430px;
+      margin: 0 auto 22px;
       font: 16px/1.8 Arial, sans-serif;
-      color:var(--text-soft);
-      text-shadow:0 2px 15px rgba(96,45,77,0.14);
+      color: var(--text-soft);
+      text-shadow: 0 2px 16px rgba(100,42,74,0.16);
     }
 
-    .photo-layout{
-      margin: 12px auto 18px;
-      width: min(100%, 430px);
-      display:grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 12px;
-      align-items:stretch;
+    .photo-showcase {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 14px;
+      margin: 18px auto 20px;
+      width: min(100%, 460px);
     }
 
-    .photo-block {
-      position:relative;
-      overflow:hidden;
-      border-radius: 22px;
-      border: 2px solid rgba(255,255,255,0.52);
-      box-shadow: 0 18px 30px rgba(120,48,82,0.16);
-      background:#fce8f2;
+    .showcase-main,
+    .mini-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .photo-frame {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      border: 2px solid rgba(255,255,255,0.55);
+      box-shadow: 0 20px 34px rgba(120,50,90,0.16);
+      background: #fdf0f7;
       min-height: 180px;
     }
 
-    .photo-block img {
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-      transition: transform .35s ease;
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform .35s ease, filter .35s ease;
     }
 
-    .photo-block:hover img {
-      transform: scale(1.04);
+    .photo-frame:hover img {
+      transform: scale(1.05);
+      filter: saturate(1.2);
     }
 
-    .photo-stack{
-      display:grid;
-      grid-template-rows: 1fr 1fr;
-      gap:12px;
-    }
-
-    .photo-block.small {
-      min-height: 84px;
+    .mini-stack .photo-frame {
+      min-height: 90px;
       border-radius: 18px;
     }
 
-    .photo-badge {
-      position:absolute;
-      left:12px;
-      bottom:12px;
-      background: rgba(255,255,255,0.28);
+    .photo-tag {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.3);
+      border: 1px solid rgba(255,255,255,0.42);
+      color: #fff;
+      font: 700 10px/1 Arial, sans-serif;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
       backdrop-filter: blur(8px);
-      border:1px solid rgba(255,255,255,0.42);
-      color:#fff;
-      font:700 11px/1 Arial, sans-serif;
-      letter-spacing:0.9px;
-      padding:7px 10px;
-      border-radius:999px;
-      text-transform:uppercase;
     }
 
-    .letter{
-      margin-top:18px;
-      padding:22px 18px 18px;
-      border-radius:22px;
+    .memories {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      width: min(100%, 470px);
+      margin-inline: auto;
+    }
+
+    .memory-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.34);
+      border-radius: 18px;
+      padding: 14px 10px;
+      text-align: center;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.18);
+    }
+
+    .memory-card .emoji {
+      font-size: 28px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .memory-card strong {
+      display: block;
+      font: 700 12px/1.2 Arial, sans-serif;
+      letter-spacing: 0.6px;
+      color: #fffafc;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+    }
+
+    .memory-card span {
+      font: 12px/1.5 Arial, sans-serif;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .letter {
+      margin-top: 22px;
+      padding: 22px 18px 18px;
+      border-radius: 24px;
       background: rgba(255,248,252,0.94);
-      color:var(--text-dark);
-      text-align:left;
-      line-height:1.85;
+      color: var(--text-dark);
+      text-align: left;
+      line-height: 1.9;
       font: 15px/1.8 Arial, sans-serif;
-      border:1px solid rgba(255,255,255,0.8);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+      border: 1px solid rgba(255,255,255,0.8);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 18px 22px rgba(120,48,82,0.08);
       animation: riseUp .7s ease;
     }
 
-    .letter h2{
-      text-align:center;
-      margin:0 0 14px;
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      color:#c64c89;
-      font-family:Georgia, serif;
+    .letter h2 {
+      text-align: center;
+      margin: 0 0 14px;
+      font-size: clamp(1.5rem, 4vw, 2.1rem);
+      color: #c64c89;
+      font-family: Georgia, serif;
     }
 
-    .signature{
-      text-align:center;
-      font-weight:700;
-      margin-top:18px;
-      color:#d14786;
+    .signature {
+      text-align: center;
+      font-weight: 700;
+      margin-top: 18px;
+      color: #d14786;
     }
 
-    .divider{
-      height:1px;
-      width:min(240px, 72%);
-      margin:24px auto 0;
+    .divider {
+      width: min(250px, 70%);
+      height: 1px;
       background: rgba(255,255,255,0.7);
+      margin: 26px auto 0;
     }
 
-    .music-box{
-      margin-top:22px;
-      text-align:left;
+    .music-box {
+      margin-top: 22px;
+      text-align: left;
       background: rgba(255,255,255,0.08);
-      border:1px solid rgba(255,255,255,0.35);
-      border-radius:18px;
-      padding:16px 14px;
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 18px;
+      padding: 16px 14px;
     }
 
-    .music-box strong{
-      display:block;
-      font:700 16px/1.5 Arial, sans-serif;
-      margin-bottom:6px;
-      color:#fff;
+    .music-box strong {
+      display: block;
+      font: 700 16px/1.5 Arial, sans-serif;
+      margin-bottom: 6px;
+      color: #fff;
     }
 
-    .song{
-      display:block;
+    .song {
+      display: block;
       font: 15px/1.5 Arial, sans-serif;
-      color:#fffafc;
-      opacity:0.95;
+      color: var(--text-soft);
+      opacity: 0.95;
     }
 
-    .music-actions{
-      display:flex;
-      gap:10px;
-      align-items:center;
-      flex-wrap:wrap;
-      margin-top:14px;
+    .music-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 14px;
     }
 
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      border:none;
-      border-radius:999px;
-      padding:12px 20px;
-      font:700 13px/1 Arial, sans-serif;
-      cursor:pointer;
-      transition:transform .2s ease, box-shadow .2s ease;
-      text-decoration:none;
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 999px;
+      padding: 12px 20px;
+      font: 700 13px/1 Arial, sans-serif;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease;
+      text-decoration: none;
     }
 
-    .btn:hover{
-      transform:translateY(-2px);
-      box-shadow:0 10px 24px rgba(110,42,79,0.2);
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(110,42,79,0.2);
     }
 
-    .btn.primary{
-      background:#fff;
-      color:var(--rose);
-      box-shadow:0 12px 20px rgba(117,54,91,0.18);
+    .btn.primary {
+      background: #fff;
+      color: var(--rose);
+      box-shadow: 0 12px 20px rgba(117,54,91,0.18);
     }
 
-    .btn.secondary{
+    .btn.secondary {
       background: rgba(255,255,255,0.08);
-      color:#fff;
-      border:1px solid rgba(255,255,255,0.45);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.45);
     }
 
-    .footer{
-      text-align:center;
-      margin-top:18px;
+    .footer {
+      text-align: center;
+      margin-top: 18px;
       font: 12px/1.5 Arial, sans-serif;
-      opacity:0.86;
-      color:#fffafc;
+      opacity: 0.9;
+      color: #fffafc;
     }
 
-    .floating-heart{
-      position:fixed;
-      bottom:-60px;
-      z-index:0;
-      pointer-events:none;
-      user-select:none;
+    .floating-heart {
+      position: fixed;
+      bottom: -60px;
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
       animation: floatUp linear forwards;
-      opacity:0.9;
+      opacity: 0.9;
       filter: drop-shadow(0 8px 14px rgba(153,75,120,0.18));
     }
 
-    .music-embed{
-      position:fixed;
-      right:18px;
-      bottom:18px;
-      width:120px;
-      height:70px;
-      border:0;
-      border-radius:16px;
-      overflow:hidden;
-      box-shadow:0 18px 28px rgba(96,40,74,0.18);
-      opacity:0.9;
-      z-index:5;
+    .music-embed {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 120px;
+      height: 70px;
+      border: 0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 18px 28px rgba(96,40,74,0.18);
+      opacity: 0.9;
+      z-index: 5;
     }
 
-    @keyframes bob{
-      0%,100%{transform:translateY(0) rotate(-2deg)}
-      50%{transform:translateY(-9px) rotate(2deg)}
+    @keyframes bob {
+      0%, 100% { transform: translateY(0) rotate(-2deg); }
+      50% { transform: translateY(-9px) rotate(2deg); }
     }
 
-    @keyframes drift{
-      0%{transform:translate(0,0) scale(1)}
-      100%{transform:translate(30px,-18px) scale(1.12)}
+    @keyframes drift {
+      0% { transform: translate(0,0) scale(1); }
+      100% { transform: translate(30px, -18px) scale(1.12); }
     }
 
-    @keyframes riseUp{
-      from{opacity:0; transform:translateY(15px)}
-      to{opacity:1; transform:translateY(0)}
+    @keyframes riseUp {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes floatUp{
-      0%{transform:translateY(0) rotate(0deg); opacity:0.9}
-      100%{transform:translateY(-115vh) rotate(360deg); opacity:0}
+    @keyframes floatUp {
+      0% { transform: translateY(0) rotate(0deg); opacity: 0.9; }
+      100% { transform: translateY(-115vh) rotate(360deg); opacity: 0; }
     }
 
-    @keyframes twinkle{
-      0%,100%{opacity:0.55; transform:scale(0.9)}
-      50%{opacity:1; transform:scale(1.18)}
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.55; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.18); }
     }
 
-    @media (max-width: 480px){
-      .photo-layout{
+    @media (max-width: 540px) {
+      .photo-showcase {
         grid-template-columns: 1fr;
       }
-      .photo-block {
-        min-height: 180px;
+      .memories {
+        grid-template-columns: 1fr 1fr 1fr;
       }
-      .music-embed{
-        width:90px;
-        height:58px;
-        right:12px;
-        bottom:12px;
+      .music-embed {
+        width: 90px;
+        height: 58px;
+        right: 12px;
+        bottom: 12px;
       }
-      .music-actions{
-        flex-direction:column;
-        align-items:stretch;
+      .music-actions {
+        flex-direction: column;
+        align-items: stretch;
       }
-      .btn{
-        width:100%;
+      .btn {
+        width: 100%;
       }
     }
   </style>
@@ -396,29 +440,49 @@
           Hari ini dunia punya alasan ekstra untuk tersenyum — karena seseorang seistimewa kamu lahir ke dunia dan membawa banyak kehangatan ke hidupku.
         </p>
 
-        <div class="photo-layout" aria-label="Kolase foto bersama">
-          <div class="photo-block">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Foto bersama" />
-            <span class="photo-badge">Us</span>
+        <div class="photo-showcase" aria-label="Galeri momen bersama">
+          <div class="showcase-main">
+            <div class="photo-frame">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Momen bersama" />
+              <span class="photo-tag">Forever</span>
+            </div>
           </div>
 
-          <div class="photo-stack">
-            <div class="photo-block small">
-              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" alt="Foto close-up" />
+          <div class="mini-stack">
+            <div class="photo-frame">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" alt="Fotoku" />
             </div>
-            <div class="photo-block small">
-              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80" alt="Foto kebahagiaan" />
+            <div class="photo-frame">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80" alt="Kebahagiaan" />
             </div>
+          </div>
+        </div>
+
+        <div class="memories" aria-label="Momen spesial">
+          <div class="memory-card">
+            <span class="emoji">💞</span>
+            <strong>Love</strong>
+            <span>Selalu</span>
+          </div>
+          <div class="memory-card">
+            <span class="emoji">🌸</span>
+            <strong>Smile</strong>
+            <span>Tanpa henti</span>
+          </div>
+          <div class="memory-card">
+            <span class="emoji">✨</span>
+            <strong>Dream</strong>
+            <span>Semakin nyata</span>
           </div>
         </div>
 
         <div class="letter">
           <h2>Untuk Puja, cintaku 💕</h2>
           <p>Selamat ulang tahun, sayangku. ❤️</p>
-          <p>Di hari yang istimewa ini, aku berdoa semoga langkahmu selalu dimudahkan, hatimu selalu tenang, dan semua harapan indah yang kamu pegang perlahan-lahan menjadi nyata.</p>
-          <p>Terima kasih sudah hadir dalam hidupku dan membuat banyak hal sederhana terasa lebih berarti. Kamu adalah salah satu alasan aku belajar lebih sabar, lebih ikhlas, dan lebih bersyukur atas semua hal yang Tuhan beri.</p>
-          <p>Semoga di usia yang baru ini, kamu selalu diberi kesehatan, kebahagiaan, rezeki yang berkah, dan banyak alasan untuk terus tersenyum. Kalau suatu hari dunia terasa berat, semoga kamu ingat bahwa ada seseorang yang selalu mendoakanmu dengan tulus.</p>
-          <p>Aku mungkin belum bisa memberi semua yang kamu inginkan, tapi aku ingin terus belajar menjadi sosok yang bisa menemanimu, mendukungmu, dan menyayangimu dengan tulus.</p>
+          <p>Di hari yang istimewa ini, aku berdoa semoga langkahmu selalu dimudahkan, hati selalu tenang, dan semua harapan indah yang kamu pegang perlahan-lahan menjadi nyata.</p>
+          <p>Terima kasih sudah hadir dalam hidupku dan membuat setiap hari terasa lebih hangat, lebih berarti, dan lebih indah. Kamu bukan sekadar alasan aku bersyukur, tapi juga alasan aku ingin menjadi pribadi yang lebih baik.</p>
+          <p>Semoga di usia yang baru ini, kamu selalu diberi kesehatan, kebahagiaan, rezeki yang berkah, dan banyak alasan untuk terus tersenyum. Kalau suatu hari dunia terasa berat, semoga kamu ingat bahwa ada seseorang yang sangat menyayangimu dan selalu mendoakanmu dengan tulus.</p>
+          <p>Aku mungkin belum bisa memberi semua yang kamu inginkan, tapi aku ingin terus belajar menjadi sosok yang bisa menemanimu, mendukungmu, dan menyayangimu dengan sepenuh hati.</p>
           <p>Selamat bertambah usia, Puja Suci Rahmadani. Semoga hari ini adalah awal dari banyak momen indah yang menunggumu, dan semoga aku masih diberi kesempatan untuk terus merayakan banyak ulang tahun bersamamu di masa depan.</p>
           <p class="signature">With all my love,<br>orang yang sangat menyayangimu ❤️</p>
         </div>
@@ -452,7 +516,8 @@
 
   <script>
     const emojis = ['💗', '💕', '💖', '🌸', '✨', '💞'];
-    function createHeart(){
+
+    function createHeart() {
       const heart = document.createElement('span');
       heart.className = 'floating-heart';
       heart.textContent = emojis[Math.floor(Math.random() * emojis.length)];
@@ -466,12 +531,10 @@
 
     const toggleBtn = document.getElementById('toggleAudio');
     const iframe = document.querySelector('.music-embed');
-
     let muted = true;
 
     toggleBtn.addEventListener('click', () => {
       muted = !muted;
-
       const src = iframe.src;
       if (muted) {
         iframe.src = src.replace('autoplay=1&mute=1', 'autoplay=1&mute=1');
