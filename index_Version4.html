@@ -7,19 +7,24 @@
   <title>Happy Birthday, Puja Suci Rahmadani 💗</title>
   <style>
     :root {
-      --pink-1: #ffe7f1;
-      --pink-2: #ffb3d1;
-      --pink-3: #ff7eb3;
-      --pink-4: #ff4d9c;
-      --purple-1: #f3d0ff;
-      --purple-2: #cb9af6;
-      --purple-3: #8f6bd8;
-      --rose: #bf4271;
-      --text-soft: #fff1f8;
-      --text-dark: #6f2f4b;
+      --bg-1: #fff0f6;
+      --bg-2: #ffd6e9;
+      --bg-3: #f7b8d3;
+      --bg-4: #d5a8f7;
+      --bg-5: #8d78d8;
+      --rose: #c54e83;
+      --rose-deep: #8d244c;
+      --pink: #ff7ebe;
+      --pink-soft: #ffe3ef;
+      --purple: #b892ff;
+      --gold: #ffe3a3;
+      --gold-2: #f7c86b;
       --white: #fffafc;
       --glass: rgba(255,255,255,0.14);
-      --gold: #ffdca9;
+      --glass-strong: rgba(255,255,255,0.20);
+      --text-soft: #fff4f9;
+      --text-dark: #6a2846;
+      --shadow: rgba(122, 51, 90, 0.18);
     }
 
     * { box-sizing: border-box; }
@@ -31,32 +36,33 @@
       font-family: Georgia, "Times New Roman", serif;
       color: #fff;
       background:
-        radial-gradient(circle at 15% 20%, rgba(255,255,255,0.7), transparent 18%),
-        radial-gradient(circle at 75% 25%, rgba(255,255,255,0.28), transparent 20%),
-        radial-gradient(circle at 40% 80%, rgba(255,255,255,0.25), transparent 24%),
-        linear-gradient(135deg, #ffeaf4 0%, #ffbfd8 16%, #eeabd7 32%, #d1a8f5 58%, #8f78d8 100%);
+        radial-gradient(circle at 12% 10%, rgba(255,255,255,0.8), transparent 16%),
+        radial-gradient(circle at 80% 18%, rgba(255,255,255,0.25), transparent 18%),
+        radial-gradient(circle at 70% 80%, rgba(255,255,255,0.26), transparent 22%),
+        linear-gradient(135deg, #fff2f7 0%, #ffd6e8 18%, #f5bae1 34%, #d2b1f5 58%, #8d78d8 100%);
       overflow-x: hidden;
       position: relative;
     }
 
     .glow {
       position: fixed;
-      width: 260px;
-      height: 260px;
+      width: 270px;
+      height: 270px;
       border-radius: 50%;
       background: rgba(255,255,255,0.22);
-      filter: blur(44px);
+      filter: blur(42px);
       z-index: 0;
       pointer-events: none;
       animation: drift 12s ease-in-out infinite alternate;
     }
-    .glow.one { top: 4%; left: -30px; }
-    .glow.two { right: -40px; bottom: 8%; animation-delay: 2s; }
-    .glow.three { left: 42%; top: 38%; width: 220px; height: 220px; animation-delay: 4s; }
+
+    .glow.one { top: 5%; left: -40px; }
+    .glow.two { right: -35px; bottom: 10%; animation-delay: 2s; }
+    .glow.three { left: 42%; top: 40%; width: 230px; height: 230px; animation-delay: 4s; }
 
     .wrap {
-      width: min(94%, 620px);
-      margin: 42px auto 38px;
+      width: min(94%, 660px);
+      margin: 42px auto 36px;
       position: relative;
       z-index: 1;
     }
@@ -64,13 +70,13 @@
     .card {
       position: relative;
       overflow: hidden;
-      background: rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.10);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
-      border: 1px solid rgba(255,255,255,0.4);
-      border-radius: 34px;
-      box-shadow: 0 26px 60px rgba(128,58,104,0.18);
-      padding: clamp(22px, 4vw, 38px);
+      border: 1px solid rgba(255,255,255,0.42);
+      border-radius: 36px;
+      box-shadow: 0 30px 70px rgba(128,58,104,0.17);
+      padding: clamp(22px, 5vw, 42px);
       text-align: center;
     }
 
@@ -78,7 +84,16 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(120deg, rgba(255,255,255,0.18), rgba(255,255,255,0.04), rgba(255,255,255,0.15));
+      background: linear-gradient(125deg, rgba(255,255,255,0.18), rgba(255,255,255,0.03), rgba(255,255,255,0.15));
+      pointer-events: none;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 14px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 26px;
       pointer-events: none;
     }
 
@@ -89,11 +104,11 @@
 
     .eyebrow {
       font: 700 11px/1.2 Arial, sans-serif;
-      letter-spacing: 4px;
+      letter-spacing: 5px;
       text-transform: uppercase;
-      color: #fffafc;
+      color: var(--white);
       opacity: 0.96;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .sparkle {
@@ -103,17 +118,17 @@
 
     h1 {
       margin: 0;
-      font-size: clamp(2.4rem, 6.6vw, 4.5rem);
-      line-height: 1.08;
+      font-size: clamp(2.5rem, 6.5vw, 4.9rem);
+      line-height: 1.05;
       letter-spacing: 1px;
       text-shadow: 0 6px 20px rgba(136,54,99,0.28);
     }
 
     .name {
       margin: 12px 0 10px;
-      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
       font-weight: 700;
-      color: #fffafc;
+      color: var(--white);
       letter-spacing: 0.6px;
     }
 
@@ -124,16 +139,16 @@
       background: rgba(255,255,255,0.12);
       border: 1px solid rgba(255,255,255,0.5);
       font: 600 13px/1.2 Arial, sans-serif;
-      letter-spacing: 0.4px;
-      color: #fffafc;
+      letter-spacing: 0.5px;
+      color: var(--white);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
     }
 
     .cake {
-      font-size: 92px;
-      margin: 18px 0 10px;
+      font-size: 96px;
+      margin: 18px 0 12px;
       display: inline-block;
-      filter: drop-shadow(0 12px 22px rgba(140,51,101,0.22));
+      filter: drop-shadow(0 14px 24px rgba(140,51,101,0.22));
       animation: bob 2.6s ease-in-out infinite;
     }
 
@@ -147,10 +162,10 @@
 
     .photo-showcase {
       display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
+      grid-template-columns: 1.18fr 0.82fr;
       gap: 14px;
-      margin: 18px auto 20px;
-      width: min(100%, 460px);
+      width: min(100%, 490px);
+      margin: 18px auto 22px;
     }
 
     .showcase-main,
@@ -162,11 +177,11 @@
     .photo-frame {
       position: relative;
       overflow: hidden;
-      border-radius: 24px;
-      border: 2px solid rgba(255,255,255,0.55);
+      border-radius: 26px;
+      border: 2px solid rgba(255,255,255,0.58);
       box-shadow: 0 20px 34px rgba(120,50,90,0.16);
-      background: #fdf0f7;
-      min-height: 180px;
+      background: #fef3f8;
+      min-height: 190px;
     }
 
     .photo-frame img {
@@ -174,16 +189,16 @@
       height: 100%;
       display: block;
       object-fit: cover;
-      transition: transform .35s ease, filter .35s ease;
+      transition: transform 0.35s ease, filter 0.35s ease;
     }
 
     .photo-frame:hover img {
       transform: scale(1.05);
-      filter: saturate(1.2);
+      filter: saturate(1.18);
     }
 
     .mini-stack .photo-frame {
-      min-height: 90px;
+      min-height: 88px;
       border-radius: 18px;
     }
 
@@ -193,7 +208,7 @@
       bottom: 12px;
       padding: 7px 10px;
       border-radius: 999px;
-      background: rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.30);
       border: 1px solid rgba(255,255,255,0.42);
       color: #fff;
       font: 700 10px/1 Arial, sans-serif;
@@ -203,12 +218,11 @@
     }
 
     .memories {
-      margin-top: 16px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0,1fr));
       gap: 12px;
       width: min(100%, 470px);
-      margin-inline: auto;
+      margin: 14px auto 0;
     }
 
     .memory-card {
@@ -221,16 +235,16 @@
     }
 
     .memory-card .emoji {
-      font-size: 28px;
       display: block;
+      font-size: 28px;
       margin-bottom: 8px;
     }
 
     .memory-card strong {
       display: block;
       font: 700 12px/1.2 Arial, sans-serif;
-      letter-spacing: 0.6px;
-      color: #fffafc;
+      letter-spacing: 0.8px;
+      color: var(--white);
       margin-bottom: 2px;
       text-transform: uppercase;
     }
@@ -240,18 +254,40 @@
       color: rgba(255,255,255,0.9);
     }
 
+    .luxury-strip {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .mini-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.25);
+      font: 700 11px/1.2 Arial, sans-serif;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
     .letter {
       margin-top: 22px;
       padding: 22px 18px 18px;
       border-radius: 24px;
-      background: rgba(255,248,252,0.94);
+      background: rgba(255,248,252,0.96);
       color: var(--text-dark);
       text-align: left;
       line-height: 1.9;
       font: 15px/1.8 Arial, sans-serif;
-      border: 1px solid rgba(255,255,255,0.8);
+      border: 1px solid rgba(255,255,255,0.85);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 18px 22px rgba(120,48,82,0.08);
-      animation: riseUp .7s ease;
+      animation: riseUp 0.7s ease;
     }
 
     .letter h2 {
@@ -371,12 +407,12 @@
     }
 
     @keyframes bob {
-      0%, 100% { transform: translateY(0) rotate(-2deg); }
+      0%,100% { transform: translateY(0) rotate(-2deg); }
       50% { transform: translateY(-9px) rotate(2deg); }
     }
 
     @keyframes drift {
-      0% { transform: translate(0,0) scale(1); }
+      0% { transform: translate(0, 0) scale(1); }
       100% { transform: translate(30px, -18px) scale(1.12); }
     }
 
@@ -391,7 +427,7 @@
     }
 
     @keyframes twinkle {
-      0%, 100% { opacity: 0.55; transform: scale(0.9); }
+      0%,100% { opacity: 0.55; transform: scale(0.9); }
       50% { opacity: 1; transform: scale(1.18); }
     }
 
@@ -474,6 +510,12 @@
             <strong>Dream</strong>
             <span>Semakin nyata</span>
           </div>
+        </div>
+
+        <div class="luxury-strip">
+          <span class="mini-badge">❤ Always</span>
+          <span class="mini-badge">💫 My favorite person</span>
+          <span class="mini-badge">🌙 You are my peace</span>
         </div>
 
         <div class="letter">
