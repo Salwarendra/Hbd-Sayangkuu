@@ -7,24 +7,24 @@
   <title>Happy Birthday, Puja Suci Rahmadani 💗</title>
   <style>
     :root {
-      --bg-1: #fff2f9;
-      --bg-2: #ffd8eb;
-      --bg-3: #f6bae5;
-      --bg-4: #cdb2ff;
-      --bg-5: #8d79d8;
-      --rose: #d75a94;
-      --rose-deep: #7f2f50;
-      --pink: #ff7ec0;
-      --pink-soft: #ffeaf6;
-      --purple: #c4a3ff;
-      --gold: #ffe5a4;
-      --gold-strong: #f2c76d;
+      --bg-1: #fff4fa;
+      --bg-2: #ffd9eb;
+      --bg-3: #edbbdf;
+      --bg-4: #d7b6ff;
+      --bg-5: #8c79d9;
+      --rose: #d85a98;
+      --rose-deep: #7f304f;
+      --pink: #ff7dd6;
+      --pink-soft: #ffeaf7;
+      --purple: #c6a5ff;
+      --gold: #ffe5a8;
+      --gold-strong: #f1cb68;
       --white: #fffafc;
-      --text-soft: #fff4fa;
-      --text-dark: #6f2d4a;
+      --text-soft: #fff3fa;
+      --text-dark: #6d2c48;
       --glass: rgba(255,255,255,0.12);
       --glass-strong: rgba(255,255,255,0.18);
-      --border: rgba(255,255,255,0.48);
+      --border: rgba(255,255,255,0.45);
       --shadow: rgba(119,56,97,0.18);
     }
 
@@ -37,10 +37,10 @@
       font-family: Georgia, "Times New Roman", serif;
       color: #fff;
       background:
-        radial-gradient(circle at 12% 14%, rgba(255,255,255,0.84), transparent 18%),
-        radial-gradient(circle at 82% 18%, rgba(255,255,255,0.26), transparent 18%),
-        radial-gradient(circle at 48% 78%, rgba(255,255,255,0.24), transparent 22%),
-        linear-gradient(135deg, #fff5fa 0%, #ffddec 18%, #f6bfdc 32%, #e3bdf5 54%, #cab4ff 68%, #8e7bd9 100%);
+        radial-gradient(circle at 14% 14%, rgba(255,255,255,0.86), transparent 18%),
+        radial-gradient(circle at 78% 18%, rgba(255,255,255,0.30), transparent 18%),
+        radial-gradient(circle at 50% 78%, rgba(255,255,255,0.24), transparent 22%),
+        linear-gradient(135deg, #fff5fa 0%, #ffddec 18%, #f7bddb 32%, #e3c0f4 52%, #c0b5ff 70%, #8d7bd9 100%);
       overflow-x: hidden;
       position: relative;
     }
@@ -79,7 +79,7 @@
     }
 
     .wrap {
-      width: min(94%, 690px);
+      width: min(94%, 700px);
       margin: 42px auto 36px;
       position: relative;
       z-index: 1;
@@ -178,120 +178,121 @@
       text-shadow: 0 2px 16px rgba(100,42,74,0.16);
     }
 
-    .photo-showcase {
-      display: grid;
-      grid-template-columns: 1.18fr 0.82fr;
-      gap: 14px;
-      width: min(100%, 500px);
-      margin: 18px auto 22px;
+    .story-header {
+      margin: 10px 0 28px;
+      text-align: center;
     }
 
-    .showcase-main,
-    .mini-stack {
-      display: grid;
-      gap: 14px;
+    .story-header .mini-tag {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.26);
+      font: 700 11px/1.2 Arial, sans-serif;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--white);
     }
 
-    .photo-frame {
+    .story-header h2 {
+      margin: 16px 0 0;
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      color: var(--white);
+      font-family: Georgia, serif;
+    }
+
+    .timeline {
       position: relative;
-      overflow: hidden;
-      border-radius: 26px;
-      border: 2px solid rgba(255,255,255,0.58);
-      box-shadow: 0 20px 34px rgba(120,50,90,0.16);
-      background: #fef3f8;
-      min-height: 195px;
+      margin: 18px auto 0;
+      padding: 0;
+      list-style: none;
+      width: min(100%, 540px);
     }
 
-    .photo-frame img {
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 22px;
+      top: 10px;
+      bottom: 10px;
+      width: 2px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.12));
+      border-radius: 999px;
+    }
+
+    .timeline-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    .timeline-dot {
+      position: relative;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(255,255,255,0.2));
+      border: 2px solid rgba(255,255,255,0.75);
+      box-shadow: 0 10px 24px rgba(123,54,95,0.18);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      z-index: 1;
+    }
+
+    .timeline-content {
+      position: relative;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 22px;
+      padding: 16px 15px 14px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+
+    .timeline-year {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.24);
+      font: 700 11px/1.2 Arial, sans-serif;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .timeline-content h3 {
+      margin: 0 0 8px;
+      font-size: clamp(1.2rem, 3vw, 1.7rem);
+      color: var(--white);
+      font-family: Georgia, serif;
+    }
+
+    .timeline-content p {
+      margin: 0;
+      font: 14px/1.75 Arial, sans-serif;
+      color: var(--text-soft);
+    }
+
+    .timeline-photo {
+      margin-top: 12px;
+      height: 170px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.28);
+      box-shadow: 0 14px 24px rgba(112,47,79,0.12);
+    }
+
+    .timeline-photo img {
       width: 100%;
       height: 100%;
       display: block;
       object-fit: cover;
-      transition: transform 0.35s ease, filter 0.35s ease;
-    }
-
-    .photo-frame:hover img {
-      transform: scale(1.05);
-      filter: saturate(1.18);
-    }
-
-    .mini-stack .photo-frame {
-      min-height: 90px;
-      border-radius: 18px;
-    }
-
-    .photo-tag {
-      position: absolute;
-      left: 12px;
-      bottom: 12px;
-      padding: 7px 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.30);
-      border: 1px solid rgba(255,255,255,0.42);
-      color: #fff;
-      font: 700 10px/1 Arial, sans-serif;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      backdrop-filter: blur(8px);
-    }
-
-    .memories {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 12px;
-      width: min(100%, 500px);
-      margin: 16px auto 0;
-    }
-
-    .memory-card {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.34);
-      border-radius: 18px;
-      padding: 14px 10px;
-      text-align: center;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.18);
-    }
-
-    .memory-card .emoji {
-      display: block;
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
-
-    .memory-card strong {
-      display: block;
-      font: 700 12px/1.2 Arial, sans-serif;
-      letter-spacing: 0.9px;
-      color: var(--white);
-      margin-bottom: 2px;
-      text-transform: uppercase;
-    }
-
-    .memory-card span {
-      font: 12px/1.5 Arial, sans-serif;
-      color: rgba(255,255,255,0.9);
-    }
-
-    .luxury-strip {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .mini-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.09);
-      border: 1px solid rgba(255,255,255,0.25);
-      font: 700 11px/1.2 Arial, sans-serif;
-      letter-spacing: 0.9px;
-      text-transform: uppercase;
-      color: var(--white);
     }
 
     .quote-box {
@@ -480,11 +481,12 @@
     }
 
     @media (max-width: 540px) {
-      .photo-showcase {
-        grid-template-columns: 1fr;
-      }
-      .memories {
-        grid-template-columns: 1fr 1fr 1fr;
+      .timeline::before { left: 16px; }
+      .timeline-item { grid-template-columns: 34px 1fr; }
+      .timeline-dot {
+        width: 34px;
+        height: 34px;
+        font-size: 16px;
       }
       .music-embed {
         width: 90px;
@@ -535,47 +537,60 @@
           Hari ini dunia punya alasan ekstra untuk tersenyum — karena seseorang seistimewa kamu lahir ke dunia dan membawa banyak kehangatan ke hidupku.
         </p>
 
-        <div class="photo-showcase" aria-label="Galeri momen bersama">
-          <div class="showcase-main">
-            <div class="photo-frame">
-              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Momen bersama" />
-              <span class="photo-tag">Forever</span>
-            </div>
-          </div>
-
-          <div class="mini-stack">
-            <div class="photo-frame">
-              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" alt="Fotoku" />
-            </div>
-            <div class="photo-frame">
-              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80" alt="Kebahagiaan" />
-            </div>
-          </div>
+        <div class="story-header">
+          <span class="mini-tag">Our story</span>
+          <h2>Kenangan yang sempat tumbuh dalam hati</h2>
         </div>
 
-        <div class="memories" aria-label="Momen spesial">
-          <div class="memory-card">
-            <span class="emoji">💞</span>
-            <strong>Love</strong>
-            <span>Selalu</span>
-          </div>
-          <div class="memory-card">
-            <span class="emoji">🌸</span>
-            <strong>Smile</strong>
-            <span>Tanpa henti</span>
-          </div>
-          <div class="memory-card">
-            <span class="emoji">✨</span>
-            <strong>Dream</strong>
-            <span>Semakin nyata</span>
-          </div>
-        </div>
+        <ul class="timeline" aria-label="Timeline ceritaku dan kamu">
+          <li class="timeline-item">
+            <div class="timeline-dot">💫</div>
+            <div class="timeline-content">
+              <span class="timeline-year">Awal</span>
+              <h3>Ketika kamu hadir</h3>
+              <p>Semua terasa lebih ringan saat kamu datang dan mengubah hari-hari biasa menjadi sesuatu yang lebih hangat dan lebih berarti.</p>
+              <div class="timeline-photo">
+                <img src="https://drive.google.com/uc?export=view&id=1SKesMoabJMjkewUxmGU7z9c6Xnvzv21w" alt="Awal cerita" />
+              </div>
+            </div>
+          </li>
 
-        <div class="luxury-strip">
-          <span class="mini-badge">❤ Always</span>
-          <span class="mini-badge">💫 My favorite person</span>
-          <span class="mini-badge">🌙 You are my peace</span>
-        </div>
+          <li class="timeline-item">
+            <div class="timeline-dot">🌸</div>
+            <div class="timeline-content">
+              <span class="timeline-year">Bertumbuh</span>
+              <h3>Setiap momen terasa lebih indah</h3>
+              <p>Tak ada hari yang terasa berat ketika ada senyum, kebersamaan, dan rasa aman yang kamu bawa di dalam hidupku.</p>
+              <div class="timeline-photo">
+                <img src="https://drive.google.com/uc?export=view&id=1_5JjRVsx1dfZorrV3TBEQRrYMHksyHST" alt="Momen tumbuh" />
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot">💞</div>
+            <div class="timeline-content">
+              <span class="timeline-year">Sekarang</span>
+              <h3>Hari ini, aku ingin kamu tahu</h3>
+              <p>Bahwa kamu adalah salah satu alasan aku ingin terus belajar menjadi lebih baik, lebih sabar, dan lebih bersyukur.</p>
+              <div class="timeline-photo">
+                <img src="https://drive.google.com/uc?export=view&id=1D1sByLOhO4D3pf_gMpjiJm21IDVO9ToF" alt="Sekarang" />
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot">✨</div>
+            <div class="timeline-content">
+              <span class="timeline-year">Masa depan</span>
+              <h3>Semoga kita masih punya banyak hari</h3>
+              <p>Aku berharap masih banyak momen indah yang akan datang, dan aku ingin tetap berada di sisi kamu dalam banyak hari yang bahagia.</p>
+              <div class="timeline-photo">
+                <img src="https://drive.google.com/uc?export=view&id=1wZSqZf9ehgpmVHXcgvYe7J-KRBdtC4W9" alt="Masa depan" />
+              </div>
+            </div>
+          </li>
+        </ul>
 
         <div class="quote-box">
           <span class="quote-mark">“</span>
